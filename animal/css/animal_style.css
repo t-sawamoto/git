@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+/*--------------------------animal_post.php-------------------------------*/
+#main img{
+	border:solid 2px #864f04;
+}
+
+.aTitle {
+	font-size: 25px;
+	text-align: center;
+}
+#doubutu {
+	text-align: center;
+	margin-top: 20px;
+}
+.aImg {
+	max-width: 400px;
+	height: auto;
+}
+.red {
+	color: red;
+	font-size: 120%;
+}
+table {
+	width: auto;
+	background: #fffde8;
+	height: auto;
+	margin: 10px auto;
+}
+table td {
+	border: solid 2px #ffb03f;
+	padding: 1em 0.5em;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+li {
+	padding: 10px;
+	margin: 10px;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*--------------------------animal.php-------------------------------*/
+.cp_ipselect {
+	overflow: hidden;
+	width: 20%;
+	margin: 2em;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl04 {
+	position: relative;
+	border-radius: 2px;
+	border: 1px solid #333;
+  border-radius: 50px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl04::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #da3c41;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl04 select {
+	padding: 8px 38px 8px 8px;
+	color: #333;
+}
+#send {
+    text-align: center;
+	margin-top:20px;
+}
+.button {
+ width:100px display : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size : 120%;        /* 文字サイズ */
+	text-align : center;      /* 文字位置   */
+	cursor : pointer;     /* カーソル   */
+	padding : 10px 100px;   /* 余白       */
+	background : #b35900;     /* 背景色     */
+	color : #ffffff;     /* 文字色     */
+	line-height : 2em;         /* 1行の高さ  */
+	transition : .3s;         /* なめらか変化 */
+/*	box-shadow : 4px 4px 3px #666666;  /* 影の設定 */
+*/ 	border : 2px solid #b35900;    /* 枠の指定 */
+}
+.button:hover {
+	box-shadow : none;        /* カーソル時の影消去 */
+	color : #b35900;     /* 背景色     */
+	background : #ffffff;     /* 文字色     */
+}
+#main {
+	text-align: center;
+	margin-bottom: 30px;
+}
+#textBox1 {
+	color: #fff;
+    border: 6px double #fff;
+    background: #464646;
+    border-radius: 10px;
+	padding:30px;
+}
+#textAni1 {
+	text-align: justify;
+	line-height: normal;
+}
+#textBox2 {
+	margin: 20px auto;
+}
+#textAni2 {
+	text-align: center;
+	line-height: normal;
+	font-size: 120%;
+	color: #333333;
+	padding: 0.5em 0;
+	border-top: solid 3px #884f00;
+	;
+	border-bottom: solid 3px #884f00;
+	;
+}
+form select{
+	line-height:20px;
+}
+.flex{
+	display:flex;
+}
+

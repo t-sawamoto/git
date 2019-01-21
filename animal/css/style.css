@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*背景白画面*/
+/*.back{
+	background-color: #FFFFFF;
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+}
+*/
+html, body {
+  width    : 100%;
+  height   : 100%;
+  margin   : 0;
+  overflow:scroll;
+}
+@keyframes bound {
+  0% {transform: scale(0) translate(0,-500px);}
+  50% {transform: scaleX(2) translate(0,200px);}
+  70% {transform: scaleY(.5) translate(0,-100px);}
+  90% {transform: scaleX(1.5) translate(0,50px);}
+  100% {transform: scale(1) translate(0,0);}
+}
+
+
+.white-box{
+	background-color:white;
+	width:70%;
+	display:block;
+	padding:3rem;
+	margin:3% auto;
+	filter:alpha(opacity=95);/*透過*/
+    -moz-opacity: 0.95;
+    opacity: 0.95;
+	border-radius: 10px;/*角丸*/
+	}
+	
+#Quietflow{
+	width:100% !important;
+	display:block !important;
+	height: 100% !important;
+}
+
