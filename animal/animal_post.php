@@ -21,9 +21,9 @@ $year=$_POST["year"];
 $month=$_POST["month"];
 $day=$_POST["day"];
 //早見表から数字を抽出
-$dsn="mysql:dbname=animal;host=localhost;port=8888;charset=utf8";
-$user="stpf_users";
-$password="dbstpfusers";
+$dsn="mysql:dbname=***;host=***;port=***;charset=utf8";
+$user="***";
+$password="***";
 $dbinfo=new PDO($dsn,$user,$password);
 $sql="SELECT $month from animal WHERE year=$year";
 $stmt=$dbinfo->query($sql);
