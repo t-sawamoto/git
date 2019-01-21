@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+  width    : 100%;
+  height   : 100%;
+  margin   : 0;
+  overflow:auto;/*うまく星空が出なければここをautoでも試してみてね*/
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+
+}
+@keyframes bound {
+  0% {transform: scale(0) translate(0,-500px);}
+  50% {transform: scaleX(2) translate(0,200px);}
+  70% {transform: scaleY(.5) translate(0,-100px);}
+  90% {transform: scaleX(1.5) translate(0,50px);}
+  100% {transform: scale(1) translate(0,0);}
+}
+
+
+.white-box{
+	background-color:white;
+	width:70%;
+	display:block;
+	padding:3rem;
+	margin:3% auto;
+	filter:alpha(opacity=95);/*透過*/
+    -moz-opacity: 0.95;
+    opacity: 0.95;
+	border-radius: 10px;/*角丸*/
+	}
+	
+#Quietflow{
+	width:100% !important;
+	display:block !important;
+	height: 100% !important;
+}
+
+#nakami{
+	width:100%;
+	height:100%;/*100％にするとコンテンツでちゃんと伸びるよ*/
+	text-align:center;
+	}
+
+/*爆発と入院共通*/
+.takashi_bakuhatsu h1, .takashi_nyuin h1{
+	font-size: 3vw;
+}
+
+.takashi_bakuhatsu span, .takashi_nyuin span{
+	font-size:5vw;
+	font-weight:bold;
+	text-shadow: 3px 3px 5px silver;
+}
+
+#timeout{
+	margin:0 auto;
+	width: 100%;
+	height: 100%;
+	animation-name: roll_1;
+	animation-duration: 2000ms;
+}
+
+.from_takashi_to_top{
+	position:absolute;
+	bottom:0;
+}
+
+.from_takashi_to_top img{
+	width:20%;
+}
+@keyframes roll_1 {
+ 0% {
+}
+ 100% {
+ transform:scale(3, 3);
+}
+}
+
+/*爆発ページ*/
+.takashi_bakuhatsu{
+	width:100%;
+	height:80vh;
+	text-align:center;
+	background-image:url(../images/hukidasi1.png);
+	background-repeat:no-repeat;
+	background-position: center bottom; 
+	background-size:contain;
+	position:relative;
+}
+
+
+.bakuhatsu{
+	width:70%;
+}
+
+
+/*入院ページ*/
+.takashi_nyuin{
+	width:100%;
+	height:80vh;
+	text-align:center;
+	background-image:url(../images/hukidasi2.png);
+	background-repeat:no-repeat;
+	background-position: center bottom; 
+	background-size:contain;
+	position:relative;
+}
+
+.nyuin{
+	width:50%;
+}
